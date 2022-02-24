@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>cs152 Lab #3: Code Generation with Mil Interpreter</title>
+<style>hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__{border: 1px dotted}</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.1050.0" data-gr-ext-installed="">
+
+<center>
+<h2><u>cs152 Lab #3: Code Generation with Mil Interpreter</u></h2>
+</center>
+
+<p>
+This week we will hand out the third phase of the class
+project, which deals with using our Bison and Flex code to output Mil Code. Mil Code is an IR (Immediate Representation), or a pseudo-assembly language that our compiler will generate. We will also complete an exercise that will help you understand the basics of code generation.
+</p>
+
+<p>
+Outline for today's lab:
+</p><ol>
+<li> Go over the third phase of the class project
+</li><li> Complete an exercise to help you become familar with the Mil Interpreter
+</li><li> Begin working on the third phase of the class project
+</li></ol>
+<p></p>
+
+<hr>
+
+<h3>Practice with the <i>Mil Interpreter</i></h3>
+
+<p>
+In this exercise, we will write a <i>code generation</i> specification for simplified version of the <b> Min </b> 
+language. We will take a bison and flex file, and translate that into <b>Mil</b> code. This language will deal with simple addition, multiplication, subtraction, division, mod, and copy statements.
+</p>
+
+<p>
+</p>
+
+<p>
+<b>Task 1:</b> Running the Mil Interpreter <br>
+1. Download the <a href="../mil_run">Mil Interpreter</a>. <br>
+2. Execute the command: <b>scp ~/Downloads/mil_run username@bolt.cs.ucr.edu:~/</b> to upload <b>mil_run</b> to the server. For example, if your email is dtan004, do: <b>scp ~/Downloads/mil_run dtan004@bolt.cs.ucr.edu</b> <br>
+3. ssh into the bolt server (e.g. ssh dtan004@bolt.cs.ucr.edu) <br>
+4. While on the bolt server, do <b>chmod 777 mil_run</b> to allow the bolt server to execute <b>mil_run</b> <br>
+5. Download  <a href="../basic.mil">basic.mil</a>. <br>
+6. Execute <b>mil_run basic.mil</b>. Does the program print out 150?
+</p>
+
+<p>
+<b>Task 2:</b> Code Generation <br>
+1. For each grammar statement, translate that piece of the grammar into Mil Code. You can look up the Mil Specification <a href="spec.html">here</a>. Print the Mil Code to the console. <br>
+2. Run your compiler on <a href="../basic.min">basic.min</a>. Can your program generate the correct code? <br>
+3. Try a more complicated example: <a href="../math.min">math.min</a>. Here is the Mil Code: <a href="../math.mil">math.mil</a>.<br>
+</p>
+
+<p>
+<b>Task 3:</b> Generating the Symbol Table <br>
+1. Study the symbol table. Understand how the symbol table is being built. <br>
+2. Use the symbol table to catch an unidentified variable. Try catching the unidentified variable in <a href="../error.min">error.min</a>
+</p>
+
+
+
+
+</body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"></div></div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
