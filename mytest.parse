@@ -13,6 +13,13 @@ declaration -> identifiers COLON INTEGER
 ident -> IDENT t
 identifiers -> ident
 declaration -> identifiers COLON ARRAY L_SQUARE_BRACKET NUMBER R_SQUARE_BRACKET OF INTEGER
+ident -> IDENT x
+identifiers -> ident
+ident -> IDENT Proc1
+ident -> IDENT Proc2
+identifiers -> ident
+identifiers -> ident COMMA identifiers
+declaration -> identifiers COLON ENUM L_PAREN identifiers R_PAREN
 declarations -> epsilon
 declarations -> declaration SEMICOLON declarations
 declarations -> declaration SEMICOLON declarations
