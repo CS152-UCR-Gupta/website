@@ -5,8 +5,14 @@ endparams
 beginlocals
 endlocals
 beginbody
-	if (k <= 1) then return 1; endif;
-	return fibonacci(k - 1) + fibonacci(k - 2);
+	if (k == 0) then 
+		return 0;
+	else if (k == 1) then 
+		return 1;
+	else 
+		return fibonacci(k - 1) + fibonacci(k - 2);
+	endif;
+	endif;
 endbody
 
 function main;
