@@ -180,16 +180,16 @@ correct), your code generator should be invoked as follows:
 The file <a href="fibonacci.mil">fibonacci.mil</a> should then be created and should contain the generated MIL code
 (it is okay if your generated code looks slightly different, but it should have the same behavior when executed).
 Next, you can test your generated code using the <code>mil_run</code> MIL interpreter to ensure that
-it behaves as expected.  Suppose we want to run the compiled <code>fibonacci</code> program with input "5":
+it behaves as expected.  Suppose we want to run the compiled <code>fibonacci</code> program with input "6":
 </p>
 
 <code>
-echo 5 > input.txt <br>
+echo 6 > input.txt <br>
 mil_run fibonacci.mil < input.txt
 </code>
 
 <p>
-When the compiled <code>fibonacci</code> program is executed with the above input "5", then the fifth fibonacci number is printed to the screen:
+When the compiled <code>fibonacci</code> program is executed with the above input "6", then the sixth fibonacci number is printed to the screen:
 </p>
 
 <code>
